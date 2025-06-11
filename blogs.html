@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pitchpad Blog</title>
+    <meta name="description" content="Read the latest updates and insights from Pitchpad." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://pitchpad.in/assets/favicon.ico" type="image/x-icon" />
+
+    <style>
+      :root {
+        --bg: #ffffff;
+        --fg: #000000;
+        --accent: #333333;
+        --max-width: 960px;
+        --padding: 2rem;
+        --card-gap: 1.5rem;
+      }
+      *, *::before, *::after { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+      }
+      a { color: var(--fg); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      header {
+        background: var(--fg);
+        color: var(--bg);
+        display: flex;
+        align-items: center;
+        padding: var(--padding) 1rem;
+      }
+      header img { width: 40px; height: 40px; margin-right: 0.75rem; }
+      header h1 { margin: 0; font-weight: 700; font-size: 1.5rem; }
+      nav { margin-left: auto; }
+      nav a { margin-left: 1rem; font-weight: 500; }
+      main {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: var(--padding);
+      }
+      h2 { font-size: 2rem; margin-bottom: 1rem; }
+      .posts {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: var(--card-gap);
+        align-items: stretch;
+      }
+      .post-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid var(--accent);
+        padding: 1.5rem;
+        border-radius: 8px;
+        background: var(--bg);
+        transition: transform 0.2s;
+      }
+      .post-card:hover { transform: translateY(-4px); }
+      .post-title { font-size: 1.25rem; margin: 0 0 0.5rem; }
+      .post-meta { font-size: 0.875rem; color: var(--accent); margin-bottom: 1rem; }
+      .post-excerpt { flex-grow: 1; margin-bottom: 1rem; }
+      .read-more { font-weight: 500; margin-top: auto; }
+      footer {
+        text-align: center;
+        font-size: 0.875rem;
+        color: var(--accent);
+        padding: 1.5rem;
+      }
+      .fixed-cta {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        background: var(--fg);
+        color: var(--bg);
+        padding: 0.75rem 1rem;
+        border-radius: 4px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+      }
+      .fixed-cta img { width: 20px; height: 20px; margin-right: 0.5rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>Latest Articles</h2>
+      <div class="posts">
+        <article class="post-card">
+          <h3 class="post-title">How to Find Your Perfect Co-Founder Match</h3>
+          <div class="post-meta">June 8, 2025 • by Rahul</div>
+          <p class="post-excerpt">Tap below to explore this article on our app and get detailed tips on finding the right co-founder.</p>
+          <a href="https://app.pitchpad.in/blogs" class="read-more">Read More →</a>
+        </article>
+        <article class="post-card">
+          <h3 class="post-title">5 Strategies to Pitch Your Startup to Investors</h3>
+          <div class="post-meta">May 30, 2025 • by Kiran</div>
+          <p class="post-excerpt">Tap below to explore this article on our app and uncover top strategies for a winning investor pitch.</p>
+          <a href="https://app.pitchpad.in/blogs" class="read-more">Read More →</a>
+        </article>
+        <article class="post-card">
+          <h3 class="post-title">Building an Engaged Community on Pitchpad</h3>
+          <div class="post-meta">May 15, 2025 • by Kiran</div>
+          <p class="post-excerpt">Tap below to explore this article on our app and learn how to grow and retain a vibrant founder community.</p>
+          <a href="https://app.pitchpad.in/blogs" class="read-more">Read More →</a>
+        </article>
+      </div>
+    </main>
+
+    <a href="https://pitchpad.in" class="fixed-cta">
+      <img src="https://pitchpad.in/assets/msg-icon.svg" alt="Visit Pitchpad" />
+      Visit Pitchpad
+    </a>
+
+    <footer>
+      &copy; 2025 Pitchpad. All rights reserved.
+    </footer>
+  </body>
+</html>
